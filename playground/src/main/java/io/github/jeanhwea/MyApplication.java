@@ -1,6 +1,6 @@
 package io.github.jeanhwea;
 
-import io.github.jeanhwea.beans.MyPerson;
+import io.github.jeanhwea.bean.Author;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApplication {
@@ -9,7 +9,7 @@ public class MyApplication {
     ClassPathXmlApplicationContext ctx =
         new ClassPathXmlApplicationContext("META-INF/my-beans.xml");
 
-    MyPerson person = ctx.getBean("myPerson", MyPerson.class);
+    Author person = ctx.getBean("author", Author.class);
     System.out.println(person.getName());
   }
 }

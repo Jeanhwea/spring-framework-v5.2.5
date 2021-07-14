@@ -1,6 +1,6 @@
-package io.github.jeanhwea.beans;
+package io.github.jeanhwea.bean;
 
-public class MyPerson {
+public class Author {
   private String name;
 
   public String getName() {
