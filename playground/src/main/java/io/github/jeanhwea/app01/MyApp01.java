@@ -4,7 +4,7 @@ import io.github.jeanhwea.app01.bean.Author;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyApplication {
+public class MyApp01 {
 
   public static void main(String[] args) {
     ClassPathXmlApplicationContext ctx1 =
