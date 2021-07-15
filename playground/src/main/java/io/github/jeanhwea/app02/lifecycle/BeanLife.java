@@ -20,6 +20,10 @@ public class BeanLife
         ApplicationEventPublisherAware,
         MessageSourceAware {
 
+  public BeanLife() {
+    System.out.println("constructor");
+  }
+
   @Override
   public void setBeanName(String name) {
     System.out.println("setBeanName");
