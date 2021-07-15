@@ -70,12 +70,12 @@ public class BeanLife
   }
 
   @Override
-  public void afterPropertiesSet() throws Exception {
+  public void afterPropertiesSet() {
     System.out.println("afterPropertiesSet");
   }
 
   @Override
-  public void destroy() throws Exception {
+  public void destroy() {
     System.out.println("destroy");
   }
 }
