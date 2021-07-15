@@ -4,7 +4,7 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="author" class="io.github.jeanhwea.bean.Author">
-		<property name="name" value="Jack Lee"/>
+		<property name="name" value="Martin Flower"/>
 	</bean>
 
 </beans>

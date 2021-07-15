@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Author {
 
-  @Value("Tom Wang")
+  @Value("Tim Pope")
   private String name;
 
   public String getName() {
