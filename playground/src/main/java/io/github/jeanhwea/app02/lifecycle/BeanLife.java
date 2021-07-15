@@ -5,8 +5,10 @@ import org.springframework.beans.factory.*;
 import org.springframework.context.*;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ResourceLoader;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringValueResolver;
 
+@Component
 public class BeanLife
     implements BeanNameAware,
         BeanFactoryAware,
