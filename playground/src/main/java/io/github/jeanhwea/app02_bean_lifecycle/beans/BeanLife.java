@@ -23,61 +23,61 @@ public class BeanLife
         MessageSourceAware {
 
   public BeanLife() {
-    System.out.println("constructor");
+    System.out.println("BeanLife#<init>()");
   }
 
   @Override
   public void setBeanName(String name) {
-    System.out.println("setBeanName");
+    System.out.println("BeanLife#setBeanName()");
   }
 
   @Override
   public void setBeanClassLoader(ClassLoader classLoader) {
-    System.out.println("setBeanClassLoader");
+    System.out.println("BeanLife#setBeanClassLoader()");
   }
 
   @Override
   public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-    System.out.println("setBeanFactory");
+    System.out.println("BeanLife#setBeanFactory()");
   }
 
   @Override
   public void setEnvironment(Environment environment) {
-    System.out.println("setEnvironment");
+    System.out.println("BeanLife#setEnvironment()");
   }
 
   @Override
   public void setEmbeddedValueResolver(StringValueResolver resolver) {
-    System.out.println("setEmbeddedValueResolver");
+    System.out.println("BeanLife#setEmbeddedValueResolver()");
   }
 
   @Override
   public void setResourceLoader(ResourceLoader resourceLoader) {
-    System.out.println("setResourceLoader");
+    System.out.println("BeanLife#setResourceLoader()");
   }
 
   @Override
   public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
-    System.out.println("setApplicationEventPublisher");
+    System.out.println("BeanLife#setApplicationEventPublisher()");
   }
 
   @Override
   public void setMessageSource(MessageSource messageSource) {
-    System.out.println("setMessageSource");
+    System.out.println("BeanLife#setMessageSource()");
   }
 
   @Override
   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-    System.out.println("setApplicationContext");
+    System.out.println("BeanLife#setApplicationContext()");
   }
 
   @Override
   public void afterPropertiesSet() {
-    System.out.println("afterPropertiesSet");
+    System.out.println("BeanLife#afterPropertiesSet()");
   }
 
   @Override
   public void destroy() {
-    System.out.println("destroy");
+    System.out.println("BeanLife#destroy()");
   }
 }
