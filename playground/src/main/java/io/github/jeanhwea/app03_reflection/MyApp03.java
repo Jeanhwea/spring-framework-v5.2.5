@@ -1,7 +1,7 @@
 package io.github.jeanhwea.app03_reflection;
 
-import io.github.jeanhwea.app03_reflection.bean.MyController;
-import io.github.jeanhwea.app03_reflection.bean.MyService;
+import io.github.jeanhwea.app03_reflection.beans.MyController;
+import io.github.jeanhwea.app03_reflection.beans.MyService;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 public class MyApp03 {
 
   public static Object prepareService(String message) throws Exception {
-    Class<?> serviceClass = Class.forName("io.github.jeanhwea.app03_reflection.bean.MyService");
+    Class<?> serviceClass = Class.forName("io.github.jeanhwea.app03_reflection.beans.MyService");
 
     Constructor<?> serviceConstructor = serviceClass.getConstructor();
     Object serviceInstance = serviceConstructor.newInstance();
@@ -23,7 +23,7 @@ public class MyApp03 {
 
   public static Object prepareController(MyService myService) throws Exception {
     Class<?> controllerClass =
-        Class.forName("io.github.jeanhwea.app03_reflection.bean.MyController");
+        Class.forName("io.github.jeanhwea.app03_reflection.beans.MyController");
     Constructor<?> controllerConstructor = controllerClass.getConstructor(MyService.class);
     Object controllerInstance = controllerConstructor.newInstance(myService);
 

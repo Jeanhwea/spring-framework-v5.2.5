@@ -1,4 +1,4 @@
-package io.github.jeanhwea.app03_reflection.bean;
+package io.github.jeanhwea.app03_reflection.beans;
 
 public class MyController {
   private final MyService myService;
