@@ -1,4 +1,4 @@
-package io.github.jeanhwea.app02.lifecycle;
+package io.github.jeanhwea.app02_bean_lifecycle.beans;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

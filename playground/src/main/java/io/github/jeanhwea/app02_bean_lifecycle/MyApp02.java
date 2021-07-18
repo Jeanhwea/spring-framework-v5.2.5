@@ -1,7 +1,7 @@
-package io.github.jeanhwea.app02;
+package io.github.jeanhwea.app02_bean_lifecycle;
 
-import io.github.jeanhwea.app02.lifecycle.BeanLife;
-import io.github.jeanhwea.app02.lifecycle.BeanLifeBeanPostProcessor;
+import io.github.jeanhwea.app02_bean_lifecycle.beans.BeanLife;
+import io.github.jeanhwea.app02_bean_lifecycle.beans.BeanLifeBeanPostProcessor;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MyApp02 {

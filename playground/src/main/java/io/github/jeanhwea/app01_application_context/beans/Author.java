@@ -1,4 +1,4 @@
-package io.github.jeanhwea.app01.bean;
+package io.github.jeanhwea.app01_application_context.beans;
 
 import org.springframework.beans.factory.annotation.Value;
 

@@ -1,6 +1,6 @@
-package io.github.jeanhwea.app01;
+package io.github.jeanhwea.app01_application_context;
 
-import io.github.jeanhwea.app01.bean.Author;
+import io.github.jeanhwea.app01_application_context.beans.Author;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
