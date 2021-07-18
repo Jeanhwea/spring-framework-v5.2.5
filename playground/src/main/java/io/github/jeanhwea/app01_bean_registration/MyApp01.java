@@ -43,10 +43,24 @@ public class MyApp01 {
     System.out.println(author4.getName());
   }
 
+  // 方法五: 使用 Supplier 方式创建
+  private static void regBean05() {
+    AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+    AbstractBeanDefinition beanDefinition =
+        BeanDefinitionBuilder.genericBeanDefinition().getBeanDefinition();
+    beanDefinition.setBeanClass(Author.class);
+    beanDefinition.setInstanceSupplier(Author::new);
+    ctx.registerBeanDefinition(Author.class.getSimpleName(), beanDefinition);
+    ctx.refresh();
+    Author author5 = ctx.getBean(Author.class.getSimpleName(), Author.class);
+    System.out.println(author5.getName());
+  }
+
   public static void main(String[] args) {
     regBean01();
     regBean02();
     regBean03();
     regBean04();
+    regBean05();
   }
 }
