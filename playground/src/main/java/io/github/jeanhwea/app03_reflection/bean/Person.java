@@ -1,4 +1,4 @@
-package io.github.jeanhwea.app03.bean;
+package io.github.jeanhwea.app03_reflection.bean;
 
 public class Person {
   private String name;

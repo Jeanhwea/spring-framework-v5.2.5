@@ -1,6 +1,6 @@
-package io.github.jeanhwea.app01_application_context;
+package io.github.jeanhwea.app01_bean_registration;
 
-import io.github.jeanhwea.app01_application_context.beans.Author;
+import io.github.jeanhwea.app01_bean_registration.beans.Author;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,22 +8,21 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp01 {
 
-  // XML 方式
+  // 方法一: XML 方式
   public static void regBean01() {
-    ClassPathXmlApplicationContext ctx =
-        new ClassPathXmlApplicationContext("META-INF/my-beans.xml");
+    ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("my-beans.xml");
     Author author1 = ctx.getBean("author", Author.class);
     System.out.println(author1.getName());
   }
 
-  // 注解方式
+  // 方法二: 注解方式
   public static void regBean02() {
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Author.class);
     Author author2 = ctx.getBean("author", Author.class);
     System.out.println(author2.getName());
   }
 
-  // 调用 registerBean 方法注册
+  // 方法三: 调用 registerBean 方法注册
   public static void regBean03() {
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
     ctx.registerBean(Author.class);
@@ -32,7 +31,7 @@ public class MyApp01 {
     System.out.println(author3.getName());
   }
 
-  // 使用 BeanDefinition 注册
+  // 方法四: 使用 BeanDefinition 注册
   private static void regBean04() {
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
     AbstractBeanDefinition beanDefinition =
