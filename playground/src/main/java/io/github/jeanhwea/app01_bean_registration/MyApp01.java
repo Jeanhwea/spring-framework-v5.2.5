@@ -10,7 +10,7 @@ public class MyApp01 {
 
   // 方法一: XML 方式
   public static void regBean01() {
-    ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("my-beans.xml");
+    ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("app01-beans.xml");
     Author author1 = ctx.getBean("author", Author.class);
     System.out.println(author1.getName());
   }

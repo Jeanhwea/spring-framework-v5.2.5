@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="userManager" class="io.github.jeanhwea.app06_property_editor.beans.UserManager">
+    <property name="dateValue">
+      <value>2021-07-01</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    <property name="customEditors">
+      <map>
+        <entry key="java.util.Date">
+          <bean class="io.github.jeanhwea.app06_property_editor.beans.DatePropertyEditor">
+            <property name="dateFormat" value="yyyy-MM-dd"/>
+          </bean>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+	  <property name="propertyEditorRegistrars">
+		  <list>
+			  <bean class="io.github.jeanhwea.app06_property_editor.beans.DatePropertyEditorRegistrar"/>
+		  </list>
+	  </property>
+  </bean>
+
+</beans>
