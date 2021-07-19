@@ -1,6 +1,5 @@
 package io.github.jeanhwea.app06_property_editor.beans;
 
-
 import java.beans.PropertyEditorSupport;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
