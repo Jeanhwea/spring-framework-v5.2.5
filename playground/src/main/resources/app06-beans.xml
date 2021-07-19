@@ -9,24 +9,13 @@
     </property>
   </bean>
 
-  <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
-    <property name="customEditors">
-      <map>
-        <entry key="java.util.Date">
-          <bean class="io.github.jeanhwea.app06_property_editor.beans.DatePropertyEditor">
-            <property name="dateFormat" value="yyyy-MM-dd"/>
-          </bean>
-        </entry>
-      </map>
-    </property>
-  </bean>
 
   <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
-	  <property name="propertyEditorRegistrars">
-		  <list>
-			  <bean class="io.github.jeanhwea.app06_property_editor.beans.DatePropertyEditorRegistrar"/>
-		  </list>
-	  </property>
+    <property name="propertyEditorRegistrars">
+      <list>
+        <bean class="io.github.jeanhwea.app06_property_editor.beans.DatePropertyEditorRegistrar"></bean>
+      </list>
+    </property>
   </bean>
 
 </beans>
