@@ -3,7 +3,9 @@ package io.github.jeanhwea.app09_jdbc.beans;
 import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EmployeeServiceImpl implements EmployeeService {
 
   private JdbcTemplate jdbcTemplate;
