@@ -17,7 +17,7 @@ public class EmployeeServiceImpl implements EmployeeService {
   }
 
   @Override
-  @SuppressWarnings("unchecked")
+  @SuppressWarnings("all")
   public List<Employee> getAll() {
     List<Employee> employees =
         jdbcTemplate.query("select * from TB_BASE_EMPL", new EmployeeRowMapper());
