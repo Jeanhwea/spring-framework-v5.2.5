@@ -1,11 +1,9 @@
 package io.github.jeanhwea.app09_jdbc.beans;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public interface EmployeeService {
-	public List<Employee> getAll();
+  List<Employee> getAll();
 }
