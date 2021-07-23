@@ -1,6 +1,5 @@
 package io.github.jeanhwea.app09_jdbc.beans;
 
-
 public class Employee {
   private Long id;
   private String name;
@@ -10,8 +9,8 @@ public class Employee {
     this.name = name;
   }
 
-	@Override
-	public String toString() {
-		return "Employee[" + this.id +"]";
-	}
+  @Override
+  public String toString() {
+    return "Employee[" + this.id + "]";
+  }
 }
