@@ -12,9 +12,9 @@ public class DataSourceConfig {
   public DataSource getDataSource() {
     DriverManagerDataSource dataSource = new DriverManagerDataSource();
     dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-    dataSource.setUrl("jdbc:mysql://localhost:3306/db01");
+    dataSource.setUrl("jdbc:mysql://localhost:3306/test01");
     dataSource.setUsername("user01");
-    dataSource.setPassword("pass01");
+    dataSource.setPassword("user01");
     return dataSource;
   }
 }
