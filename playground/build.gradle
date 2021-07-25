@@ -13,7 +13,7 @@ dependencies {
   compile(project(":spring-context"))
   compile(project(":spring-aspects"))
   compile(project(":spring-jdbc"))
-  compile(project(":spring-web"))
+  compile(project(":spring-webmvc"))
   compile("mysql:mysql-connector-java:5.1.47")
   testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
