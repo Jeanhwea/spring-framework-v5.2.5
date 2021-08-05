@@ -6,7 +6,7 @@ import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MyApp01 {
+public class App {
 
   // 方法一: XML 方式
   public static void regBean01() {

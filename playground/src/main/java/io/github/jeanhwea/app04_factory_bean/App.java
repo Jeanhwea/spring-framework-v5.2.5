@@ -2,7 +2,7 @@ package io.github.jeanhwea.app04_factory_bean;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MyApp04 {
+public class App {
 
   ////////////////////////////////////////////////////////////////////////////////
   // 输出结果
@@ -16,7 +16,7 @@ public class MyApp04 {
   ////////////////////////////////////////////////////////////////////////////////
 
   public static void main(String[] args) {
-    Package pkg = MyApp04.class.getPackage();
+    Package pkg = App.class.getPackage();
     String basePackage = pkg.getName();
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(basePackage);
 

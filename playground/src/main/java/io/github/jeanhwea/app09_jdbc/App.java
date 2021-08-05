@@ -5,10 +5,10 @@ import io.github.jeanhwea.app09_jdbc.beans.EmployeeService;
 import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MyApp09 {
+public class App {
 
   public static void main(String[] args) {
-    String pkgname = MyApp09.class.getPackage().getName();
+    String pkgname = App.class.getPackage().getName();
     System.out.println(pkgname);
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(pkgname);
     EmployeeService employeeService = ctx.getBean("employeeServiceImpl", EmployeeService.class);

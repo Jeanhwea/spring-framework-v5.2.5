@@ -2,7 +2,7 @@ package io.github.jeanhwea.app02_bean_lifecycle;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MyApp02 {
+public class App {
 
   ////////////////////////////////////////////////////////////////////////////////
   // 输出结果
@@ -24,7 +24,7 @@ public class MyApp02 {
   ////////////////////////////////////////////////////////////////////////////////
 
   public static void main(String[] args) {
-    Package pkg = MyApp02.class.getPackage();
+    Package pkg = App.class.getPackage();
     String basePackage = pkg.getName();
     AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(basePackage);
   }

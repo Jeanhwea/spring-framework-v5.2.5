@@ -6,7 +6,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class MyApp03 {
+public class App {
 
   public static Object prepareService(String message) throws Exception {
     Class<?> serviceClass = Class.forName("io.github.jeanhwea.app03_reflection.beans.MyService");
